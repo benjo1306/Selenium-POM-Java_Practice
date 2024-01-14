@@ -34,7 +34,8 @@ public class DemoWebShop {
 // Sort the list of results in A-Z order
         Collections.sort(resultTexts);
 
-        // Retrieve the text of each element again
+// Retrieve the text of each element again
+// Moram tako jer ne mogu uspoređivati kasnije sa results, budući da je to lista web elemenata, a ja trebam text usporediti
         List<String> sortedResultTexts = new ArrayList<>();
         for (WebElement result : results) {
             sortedResultTexts.add(result.getText());
